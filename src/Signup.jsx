@@ -93,7 +93,7 @@ const Signup = () => {
             <div className="auth-right">
                 <div className="auth-header">
                     <img src="/logo.png" alt="Ciertto" className="auth-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }} />
-                    <p className="auth-switch">¿Ya tienes una cuenta? <a href="#">Acceder</a></p>
+                    <p className="auth-switch">¿Ya tienes una cuenta? <a href="https://app.ciertto.com">Acceder</a></p>
                 </div>
 
                 <div className="auth-form-wrapper">

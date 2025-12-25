@@ -138,12 +138,12 @@ const Header = () => {
 
                     <div className="mobile-only" style={{ marginTop: "2rem", flexDirection: "column", gap: "0.75rem", width: "100%" }}>
                         <Link to="/empezar" className="btn btn-primary" onClick={() => setIsMenuOpen(false)}>Pruebalo gratis</Link>
-                        <a href="#" className="btn btn-secondary" onClick={() => setIsMenuOpen(false)}>Acceder</a>
+                        <a href="https://app.ciertto.com" className="btn btn-secondary" onClick={() => setIsMenuOpen(false)}>Acceder</a>
                     </div>
                 </nav>
 
                 <div className="nav-ctas">
-                    <a href="#" className="btn btn-outline desktop-only">Acceder</a>
+                    <a href="https://app.ciertto.com" className="btn btn-outline desktop-only">Acceder</a>
                     <Link to="/empezar" className="btn btn-primary desktop-only">Prueba corta</Link>
 
                     <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle menu">
