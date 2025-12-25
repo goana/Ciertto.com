@@ -28,7 +28,7 @@ function HomePage() {
               </p>
               <div className="hero-btns">
                 <Link to="/empezar" className="btn btn-primary btn-lg" style={{ textTransform: 'uppercase' }}>Pruébalo gratis</Link>
-                <a href="#" className="btn btn-outline btn-lg">Acceder</a>
+                <a href="https://app.ciertto.com" className="btn btn-outline btn-lg">Acceder</a>
               </div>
               <p className="microcopy" style={{ fontSize: '0.8rem', opacity: 0.5 }}>
                 Exporta tus datos cuando quieras.
@@ -473,7 +473,7 @@ function HomePage() {
             <h2 style={{ fontSize: '2.25rem' }}>Recupera el control de tu tiempo hoy.</h2>
             <div className="hero-btns">
               <Link to="/empezar" className="btn btn-secondary btn-lg">Empezar ahora</Link>
-              <a href="#" className="btn btn-outline btn-lg" style={{ borderColor: 'var(--secondary)', background: 'transparent', color: 'var(--secondary)' }}>Acceder</a>
+              <a href="https://app.ciertto.com" className="btn btn-outline btn-lg" style={{ borderColor: 'var(--secondary)', background: 'transparent', color: 'var(--secondary)' }}>Acceder</a>
             </div>
             <p style={{ fontSize: '0.8rem', marginTop: '2rem', opacity: 0.6 }}>Garantía de exportación total. Tus datos son tuyos.</p>
           </div>
