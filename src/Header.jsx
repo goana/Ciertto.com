@@ -127,24 +127,23 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="mega-footer">
-                                <div className="mega-footer-tagline">CENTRALIZA · AUTOMATIZA · DECIDE</div>
+                                <div className="mega-footer-tagline">Centraliza · Automatiza · Decide</div>
                             </div>
                         </div>
                     </div>
 
                     <a href="/#precios" className="nav-link mobile-only" onClick={() => setIsMenuOpen(false)}>Funcionalidades</a>
                     <Link to="/precios" className="nav-link" onClick={() => setIsMenuOpen(false)}>Precios</Link>
-                    <a href="/#seguridad" className="nav-link" onClick={() => setIsMenuOpen(false)}>Seguridad</a>
 
                     <div className="mobile-only" style={{ marginTop: "2rem", flexDirection: "column", gap: "0.75rem", width: "100%" }}>
-                        <Link to="/empezar" className="btn btn-primary" onClick={() => setIsMenuOpen(false)}>Pruebalo gratis</Link>
+                        <Link to="/empezar" className="btn btn-primary" onClick={() => setIsMenuOpen(false)}>Pruébalo gratis</Link>
                         <a href="https://app.ciertto.com" className="btn btn-secondary" onClick={() => setIsMenuOpen(false)}>Acceder</a>
                     </div>
                 </nav>
 
                 <div className="nav-ctas">
                     <a href="https://app.ciertto.com" className="btn btn-outline desktop-only">Acceder</a>
-                    <Link to="/empezar" className="btn btn-primary desktop-only">Prueba corta</Link>
+                    <Link to="/empezar" className="btn btn-primary desktop-only">Pruébalo gratis</Link>
 
                     <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle menu">
                         {isMenuOpen ? '✕' : '☰'}

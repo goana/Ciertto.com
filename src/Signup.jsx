@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -131,8 +131,8 @@ const Signup = () => {
                         </form>
 
                         <p className="auth-terms">
-                            Al continuar confirmas que aceptas nuestros <br />
-                            <a href="#">Términos y condiciones</a>, <a href="#">Política de Privacidad y Cookies</a>.
+                            Al continuar confirmas que aceptas nuestro <br />
+                            <Link to="/aviso-legal">Aviso legal</Link> y nuestra <Link to="/privacidad">Política de privacidad y cookies</Link>.
                         </p>
                     </div>
                 </div>

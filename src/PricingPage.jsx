@@ -38,12 +38,12 @@ const PricingPage = () => {
                         {/* Plan Base */}
                         <div className="price-card">
                             <h3>Base</h3>
-                            <div className="price-slogan">ORDEN Y CONTROL OPERATIVO</div>
+                            <div className="price-slogan">Orden y control operativo</div>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">19€</span>
                                 <span className="price-period">/mes</span>
                             </div>
-                            <div className="launch-badge">PRECIO LANZAMIENTO</div>
+                            <div className="launch-badge">Precio lanzamiento</div>
                             <div className="after-price">Después 29€/mes</div>
 
                             <ul className="price-features-list">
@@ -57,17 +57,17 @@ const PricingPage = () => {
 
                         {/* Plan Pro */}
                         <div className="price-card featured">
-                            <div className="popular-badge">MÁS POPULAR</div>
+                            <div className="popular-badge">Más popular</div>
                             <h3>Pro</h3>
-                            <div className="price-slogan">GESTIÓN INTEGRAL + DINERO</div>
+                            <div className="price-slogan">Gestión integral + dinero</div>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">39€</span>
                                 <span className="price-period">/mes</span>
                             </div>
-                            <div className="launch-badge">PRECIO LANZAMIENTO</div>
+                            <div className="launch-badge">Precio lanzamiento</div>
                             <div className="after-price">Después 59€/mes</div>
 
-                            <div className="price-feature-plus">+ TODO LO DE BASE</div>
+                            <div className="price-feature-plus">+ Todo lo de base</div>
                             <ul className="price-features-list">
                                 <li className="price-feature-item">✓ Facturación & Gastos</li>
                                 <li className="price-feature-item">✓ Métricas de Dinero</li>
@@ -79,15 +79,15 @@ const PricingPage = () => {
                         {/* Plan Premium IA */}
                         <div className="price-card dark-theme">
                             <h3>Premium IA</h3>
-                            <div className="price-slogan">AUTOMATIZACIÓN MÁXIMA</div>
+                            <div className="price-slogan">Automatización máxima</div>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">79€</span>
                                 <span className="price-period">/mes</span>
                             </div>
-                            <div className="launch-badge">PRECIO LANZAMIENTO</div>
+                            <div className="launch-badge">Precio lanzamiento</div>
                             <div className="after-price">Después 119€/mes</div>
 
-                            <div className="price-feature-plus">+ TODO LO DE PRO</div>
+                            <div className="price-feature-plus">+ Todo lo de pro</div>
                             <ul className="price-features-list">
                                 <li className="price-feature-item">✓ Asistente IA Total</li>
                                 <li className="price-feature-item">✓ Búsqueda Conversacional</li>
@@ -98,7 +98,7 @@ const PricingPage = () => {
                     </div>
 
                     <div className="pricing-footer-note" style={{ marginBottom: '8rem' }}>
-                        OPORTUNIDAD POR TIEMPO LIMITADO
+                        Oportunidad por tiempo limitado
                     </div>
 
                     <div className="comparison-container">
@@ -129,15 +129,6 @@ const PricingPage = () => {
                 </div>
             </main>
 
-            <footer>
-                <div className="container">
-                    <div style={{ display: 'flex', justifyContent: 'center', borderTop: '1px solid var(--border-color)', paddingTop: '2.5rem' }}>
-                        <p style={{ fontSize: '0.8rem', textAlign: 'center', opacity: 0.6 }}>
-                            © 2024 Ciertto. Precios sin IVA incluido. No es una asesoría fiscal.
-                        </p>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 };
