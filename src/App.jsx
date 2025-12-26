@@ -9,6 +9,7 @@ import ContactPage from './ContactPage'
 import CookieConsent from './CookieConsent'
 import { AvisoLegal, PoliticaPrivacidad, PoliticaCookies } from './LegalPages'
 import './pricing-new.css'
+import ScrollToTop from './ScrollToTop'
 
 function HomePage() {
   const [adminHours, setAdminHours] = useState(10);
@@ -521,6 +522,7 @@ function HomePage() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="main-layout">
         <Routes>
           <Route path="/" element={<HomePage />} />
