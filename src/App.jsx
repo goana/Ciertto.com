@@ -6,7 +6,9 @@ import Header from './Header'
 import SuccessPage from './SuccessPage'
 import Footer from './Footer'
 import ContactPage from './ContactPage'
+import CookieConsent from './CookieConsent'
 import { AvisoLegal, PoliticaPrivacidad, PoliticaCookies } from './LegalPages'
+import './pricing-new.css'
 
 function HomePage() {
   const [adminHours, setAdminHours] = useState(10);
@@ -25,7 +27,7 @@ function HomePage() {
           <div className="container">
             <div className="animate-up">
               <span className="section-tag">Asistente de productividad</span>
-              <h1>Herramienta de gestión para <span style={{ color: '#FFB800' }}>autónomos</span> y emprendedores en España</h1>
+              <h1>Herramienta de gestión para <span style={{ color: '#FFB800' }}>autónomos</span>: tareas, calendario, clientes y finanzas en un solo sitio</h1>
               <p className="hero-subtitle">
                 Ciertto no solo guarda la información de tu negocio (tareas, proyectos, clientes y facturas). Su asistente la convierte en decisiones y siguientes pasos para que crezcas sin perder el control.
               </p>
@@ -64,17 +66,31 @@ function HomePage() {
           </div>
         </section>
 
+        {/* Social Proof */}
+        <section style={{ padding: '3rem 0', backgroundColor: 'white' }}>
+          <div className="container">
+            <div style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem 3rem', background: 'rgba(255, 255, 255, 0.6)', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.05)', textAlign: 'center' }}>
+              <p style={{ fontSize: '1.05rem', fontStyle: 'italic', color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1rem', opacity: 0.9 }}>
+                "Antes saltaba entre Notion, Google Calendar y Excel. Ahora todo está en Ciertto y sé exactamente qué toca cada día."
+              </p>
+              <p style={{ fontSize: '0.9rem', color: 'var(--secondary)', opacity: 0.6, fontWeight: 600 }}>
+                — Laura M., Consultora de Marketing
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Ciertto vs Chaos */}
         <section className="versus-section">
           <div className="container">
             <div className="text-center" style={{ marginBottom: '4rem' }}>
               <span className="section-tag">Centralización</span>
-              <h2 className="section-title">Deja de saltar entre 5 pestañas</h2>
-              <p className="section-desc" style={{ margin: '0 auto' }}>¿Tu negocio vive repartido en mil sitios?</p>
+              <h2 className="section-title">Deja de trabajar "por partes"</h2>
+              <p className="section-desc" style={{ margin: '0 auto' }}>Cuando cada parte del negocio vive en un sitio, pierdes contexto: apuntas lo mismo dos veces, se te olvidan seguimientos y priorizas lo urgente. Ciertto lo ordena para que tu día tenga una sola dirección.</p>
             </div>
             <div className="versus-grid">
               <div className="versus-card chaos">
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>El caos actual</h3>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>Antes: "Tengo cosas apuntadas… pero no un plan"</h3>
                 <ul className="versus-list">
                   <li className="versus-item"><span className="versus-icon">❌</span> Excel + Notion para proyectos.</li>
                   <li className="versus-item"><span className="versus-icon">❌</span> WhatsApp para gestionar clientes.</li>
@@ -84,7 +100,7 @@ function HomePage() {
                 </ul>
               </div>
               <div className="versus-card ciertto">
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>El orden de Ciertto</h3>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>Con Ciertto: "Sé qué toca hoy y por qué"</h3>
                 <ul className="versus-list">
                   <li className="versus-item"><span className="versus-icon">✨</span> Todo tu flujo en un solo sitio.</li>
                   <li className="versus-item"><span className="versus-icon">✨</span> CRM vinculado a tus facturas.</li>
@@ -115,8 +131,7 @@ function HomePage() {
           <div className="container">
             <div className="text-center">
               <span className="section-tag">El desafío</span>
-              <h2 className="section-title">¿Cansado de la dispersión?</h2>
-              <p className="section-desc">Gestionar un negocio con herramientas desconectadas te quita el foco y te hace perder el control sobre tus verdaderos números.</p>
+              <h2 className="section-title">Lo que te está costando el caos (aunque no lo apuntes)</h2>
             </div>
             <div className="problem-grid">
               <div className="problem-card">
@@ -158,19 +173,19 @@ function HomePage() {
               <div className="feature-card">
                 <div className="feature-icon">🧾</div>
                 <h3>Facturación y modelos</h3>
-                <p>Emite facturas legales en España con IVA e IRPF configurados. Dashboard fiscal integrado.</p>
+                <p>Emite facturas legales en España con IVA e IRPF configurados. Dashboard fiscal integrado. <span style={{ fontSize: '0.85rem', opacity: 0.6 }}>(Verifactu en roadmap 2026)</span></p>
                 <span className="feature-badge">Localizado España</span>
               </div>
               <div className="feature-card">
                 <div className="feature-icon">🤖</div>
                 <h3>Gastos inteligentes</h3>
-                <p>Sube gastos y nuestra IA extraerá los datos. Archivamos el documento en tu Google Drive por ti.</p>
+                <p>Sube gastos y nuestra IA extraerá los datos automáticamente. Mantén tus tickets organizados y vinculados a tus proyectos.</p>
                 <span className="feature-badge">IA Integrada</span>
               </div>
               <div className="feature-card">
                 <div className="feature-icon">👥</div>
                 <h3>Contactos y CRM</h3>
-                <p>Gestiona estados de leads, NIFs y relaciones comerciales sin la fricción de un CRM pesado.</p>
+                <p>Guarda clientes con sus NIFs, vincula facturas y proyectos, y gestiona el estado de cada relación comercial. Todo en un solo sitio.</p>
                 <span className="feature-badge">Operativo</span>
               </div>
               <div className="feature-card">
@@ -189,21 +204,22 @@ function HomePage() {
             <div className="ai-flex">
               <div className="ai-content">
                 <span className="section-tag" style={{ background: 'rgba(255,184,0,0.1)', color: 'var(--primary)', border: 'none' }}>IA con contexto</span>
-                <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem', color: 'var(--secondary)' }}>Un asistente que sí conoce tus números</h2>
+                <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1.5rem', color: 'var(--secondary)' }}>Un asistente que no solo conversa: te aterriza</h2>
                 <p style={{ fontSize: '1.1rem', color: 'var(--secondary)', opacity: 0.8, marginBottom: '2rem', lineHeight: '1.6' }}>
-                  No es un chat genérico. Es inteligencia aplicada a tus datos reales de facturación, horas y proyectos. Ciertto entiende el contexto de tu negocio en España para darte respuestas accionables.
+                  Pídele un resumen, una alerta o el siguiente paso. El asistente trabaja con tu información dentro de Ciertto para que no tengas que montar el puzzle a mano.
                 </p>
                 <Link to="/empezar" className="btn btn-primary">Ver demo de la IA</Link>
               </div>
 
               <div className="ai-demo">
                 <div className="ai-card">
-                  <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--secondary)', marginBottom: '0.75rem' }}>"¿Qué clientes me dan más margen real?"</p>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--secondary)', opacity: 0.7 }}>Cruza ingresos y horas trabajadas para obtener un análisis de rentabilidad exacto por cliente.</p>
+                  <p style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--secondary)', marginBottom: '0' }}>"Qué me falta por cerrar hoy y cuánto tiempo me queda"</p>
                 </div>
                 <div className="ai-card">
-                  <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--secondary)', marginBottom: '0.75rem' }}>"Optimiza mi agenda para esta semana."</p>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--secondary)', opacity: 0.7 }}>Propone bloques de tiempo basados en tus prioridades y disponibilidad real en tu calendario.</p>
+                  <p style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--secondary)', marginBottom: '0' }}>"Resumen de la semana: avances, pendientes y bloqueos"</p>
+                </div>
+                <div className="ai-card">
+                  <p style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--secondary)', marginBottom: '0' }}>"Dónde se me va el tiempo y qué debería recortar"</p>
                 </div>
               </div>
             </div>
@@ -217,7 +233,9 @@ function HomePage() {
               <div className="roi-content">
                 <span className="section-tag" style={{ color: 'var(--primary)', background: 'rgba(255,184,0,0.1)', border: 'none' }}>Rentabilidad</span>
                 <h2 style={{ fontSize: '3rem', marginBottom: '2rem', color: 'white' }}>¿Cuánto vale tu tiempo?</h2>
-                <p style={{ opacity: 0.8, fontSize: '1.2rem', marginBottom: '4rem', color: 'white' }}>La mayoría de autónomos pierden hasta un 30% de su semana en gestión administrativa que Ciertto puede automatizar.</p>
+                <p style={{ opacity: 0.9, fontSize: '1.15rem', marginBottom: '4rem', color: 'white', lineHeight: '1.6' }}>
+                  Los autónomos pierden horas cada semana en tareas administrativas. Mueve los controles para ver cuánto tiempo y dinero podrías recuperar con Ciertto.
+                </p>
 
                 <div className="roi-controls">
                   <div className="roi-control-group">
@@ -253,15 +271,15 @@ function HomePage() {
 
               <div className="roi-results">
                 <div className="roi-result-item">
-                  <h4>TIEMPO RECUPERADO</h4>
-                  <div className="roi-result-value">{timeSaved}h <span style={{ fontSize: '1rem', opacity: 0.5 }}>/semana</span></div>
+                  <div className="roi-result-value">{timeSaved}h <span style={{ fontSize: '1.5rem', opacity: 0.6, fontWeight: 400 }}>/semana</span></div>
+                  <h4 style={{ marginTop: '0.5rem' }}>Tiempo que recuperas</h4>
                 </div>
                 <div className="roi-result-item">
-                  <h4>DINERO RECUPERADO</h4>
-                  <div className="roi-result-value">{moneyRecovered}€ <span style={{ fontSize: '1rem', opacity: 0.5 }}>/mes</span></div>
+                  <div className="roi-result-value">{moneyRecovered}€ <span style={{ fontSize: '1.5rem', opacity: 0.6, fontWeight: 400 }}>/mes</span></div>
+                  <h4 style={{ marginTop: '0.5rem' }}>Dinero que recuperas</h4>
                 </div>
-                <div className="text-center" style={{ marginTop: '2rem' }}>
-                  <p style={{ fontSize: '0.9rem', opacity: 0.5 }}>Calculado estimando que Ciertto automatiza o agiliza el 50% de tus procesos administrativos.</p>
+                <div className="text-center" style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                  <p style={{ fontSize: '0.9rem', opacity: 0.7, color: 'white' }}>Estimación basada en automatizar el 50% de tus tareas administrativas</p>
                 </div>
               </div>
             </div>
@@ -310,83 +328,50 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Integrations Section */}
+        {/* Google Calendar Integration */}
         <section className="integrations-section">
           <div className="container">
             <div className="text-center">
-              <span className="section-tag">Sistema</span>
-              <h2 className="section-title">Tu ecosistema actual, mejorado</h2>
-              <p className="section-desc">Ciertto se conecta con las herramientas que ya usas para que no empieces de cero.</p>
+              <span className="section-tag">Sincronización</span>
+              <h2 className="section-title">Conecta tu calendario y trabaja desde un solo sitio</h2>
+              <p className="section-desc">Ciertto se sincroniza con Google Calendar para que veas todas tus reuniones y tareas en una sola vista. Sin duplicar, sin saltar entre pestañas.</p>
             </div>
-            <div className="logos-grid">
-              <div className="integration-logo">Google Drive</div>
-              <div className="integration-logo">Google Calendar</div>
-              <div className="integration-logo">Gmail</div>
-              <div className="integration-logo">Slack</div>
-              <div className="integration-logo">Bancos (PSD2)</div>
-              <div className="integration-logo">Dropbox</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Compliance Bar */}
-        <section className="compliance-bar">
-          <div className="container">
-            <div className="compliance-grid">
-              <div className="compliance-item">
-                <span style={{ fontSize: '2rem', display: 'block', marginBottom: '1rem' }}>⚖️</span>
-                <h4>Ley Crea y Crece</h4>
-                <p>Preparado para la factura electrónica obligatoria.</p>
-              </div>
-              <div className="compliance-item">
-                <span style={{ fontSize: '2rem', display: 'block', marginBottom: '1rem' }}>🛡️</span>
-                <h4>Veri*factu</h4>
-                <p>Cumple con los requisitos de Hacienda para software de facturación.</p>
-              </div>
-              <div className="compliance-item">
-                <span style={{ fontSize: '2rem', display: 'block', marginBottom: '1rem' }}>🇪🇸</span>
-                <h4>100% España</h4>
-                <p>Modelos y normativas locales siempre actualizados.</p>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', marginTop: '4rem' }}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/960px-Google_Calendar_icon_%282020%29.svg.png"
+                alt="Google Calendar"
+                style={{ width: '80px', height: '80px' }}
+              />
+              <div style={{ fontSize: '1.25rem', color: 'var(--secondary)', fontWeight: 600 }}>
+                Google Calendar
               </div>
             </div>
           </div>
         </section>
 
-        {/* Support & Community */}
-        <section className="support-section">
-          <div className="container">
-            <div className="support-flex">
-              <div className="support-image-mock">🤝</div>
-              <div className="support-content">
-                <span className="section-tag">Humanos</span>
-                <h2 className="section-title" style={{ textAlign: 'left' }}>No estás solo en esto</h2>
-                <p style={{ fontSize: '1.2rem', marginBottom: '2rem', opacity: 0.8 }}>Sabemos que ser autónomo es un reto. Por eso en Ciertto te ofrecemos soporte humano directo en español.</p>
-                <p style={{ marginBottom: '3rem', opacity: 0.7 }}>Además, al unirte a Ciertto, entras en nuestra comunidad de usuarios donde podrás hacer networking y compartir aprendizajes con otros emprendedores como tú.</p>
-                <Link to="/empezar" className="btn btn-primary">Únete a la comunidad</Link>
-              </div>
-            </div>
-          </div>
-        </section>
+
+
+
 
         {/* Audience */}
-        <section>
+        <section style={{ padding: '8rem 0', backgroundColor: 'white' }}>
           <div className="container">
             <div className="audience">
               <div className="audience-block audience-yes">
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Ideal para</h3>
+                <h3 style={{ fontSize: '1.35rem', marginBottom: '2rem', fontWeight: 700, color: 'var(--secondary)' }}>Ideal para</h3>
                 <ul className="audience-list">
-                  <li>✨ Autónomos de servicios digitales.</li>
-                  <li>✨ Formadores e infoproductores.</li>
-                  <li>✨ Solopreneurs apasionados por el foco.</li>
-                  <li>✨ Consultores que necesitan medir rentabilidad.</li>
+                  <li>Autónomos de servicios digitales</li>
+                  <li>Formadores e infoproductores</li>
+                  <li>Emprendedores enfocados en productividad</li>
+                  <li>Consultores que necesitan medir rentabilidad</li>
                 </ul>
               </div>
               <div className="audience-block audience-no">
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>No diseñado para</h3>
+                <h3 style={{ fontSize: '1.35rem', marginBottom: '2rem', fontWeight: 700, color: 'var(--secondary)' }}>No diseñado para</h3>
                 <ul className="audience-list">
-                  <li>✕ Tiendas físicas o e-commerce masivo.</li>
-                  <li>✕ Equipos grandes con flujos de aprobación.</li>
-                  <li>✕ Necesidades de contabilidad fiscal avanzada.</li>
+                  <li>Tiendas físicas o e-commerce masivo</li>
+                  <li>Equipos grandes con flujos de aprobación</li>
+                  <li>Necesidades de contabilidad fiscal avanzada</li>
                 </ul>
               </div>
             </div>
@@ -397,69 +382,112 @@ function HomePage() {
         <section id="precios" style={{ backgroundColor: '#fafbfc', padding: '10rem 0' }}>
           <div className="container">
             <div className="text-center" style={{ marginBottom: '6rem' }}>
-              <h2 className="section-title" style={{ fontSize: '3.5rem' }}>Precios honestos</h2>
+              <h2 className="section-title" style={{ fontSize: '3.5rem' }}>Elige según el nivel de control que quieres</h2>
+              <p style={{ fontSize: '1.1rem', opacity: 0.7, marginTop: '1.5rem' }}>Empieza simple. Sube cuando el sistema ya te sostiene.</p>
             </div>
 
             <div className="pricing-grid">
               {/* Plan Base */}
               <div className="price-card">
-                <h3>Base</h3>
-                <div className="price-slogan">Orden y control operativo</div>
+                <h3>BASE</h3>
                 <div className="price-amount-wrapper">
                   <span className="price-amount">19€</span>
-                  <span className="price-period">/mes</span>
+                  <span className="price-period">/ MES</span>
                 </div>
-                <div className="launch-badge">Precio lanzamiento</div>
-                <div className="after-price">Después 29€/mes</div>
 
                 <ul className="price-features-list">
-                  <li className="price-feature-item">✓ Dashboard & Foco</li>
-                  <li className="price-feature-item">✓ Calendario Google</li>
-                  <li className="price-feature-item">✓ Tareas & Cronómetro</li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Dashboard & Foco
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Calendario
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Tareas & Tiempos
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    CRM Ligero
+                  </li>
+                  <li className="price-feature-item ai-credits">
+                    <span className="sparkle-icon">✨</span>
+                    5 créditos IA / mes
+                  </li>
                 </ul>
 
-                <Link to="/empezar?plan=base" className="btn btn-price btn-price-dark" style={{ marginTop: 'auto' }}>Elegir Base</Link>
+                <Link to="/empezar?plan=base" className="btn btn-price btn-outline-dark" style={{ marginTop: 'auto' }}>ELEGIR BASE</Link>
               </div>
 
               {/* Plan Pro */}
-              <div className="price-card featured">
-                <div className="popular-badge">Más popular</div>
-                <h3>Pro</h3>
-                <div className="price-slogan">Gestión integral + dinero</div>
+              <div className="price-card featured-card">
+                <div className="popular-badge">MÁS POPULAR</div>
+                <h3>PRO</h3>
                 <div className="price-amount-wrapper">
                   <span className="price-amount">39€</span>
-                  <span className="price-period">/mes</span>
+                  <span className="price-period">/ MES</span>
                 </div>
-                <div className="launch-badge">Precio lanzamiento</div>
-                <div className="after-price">Después 59€/mes</div>
 
-                <div className="price-feature-plus">+ Todo lo de base</div>
                 <ul className="price-features-list">
-                  <li className="price-feature-item">✓ Facturación & Gastos</li>
-                  <li className="price-feature-item">✓ Métricas de Dinero</li>
+                  <li className="price-feature-item">
+                    <span className="check-icon gold"></span>
+                    Todo lo Base
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon gold"></span>
+                    Facturación ilimitada
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon gold"></span>
+                    Gestión de gastos
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon gold"></span>
+                    Exportación total
+                  </li>
+                  <li className="price-feature-item ai-credits">
+                    <span className="sparkle-icon">✨</span>
+                    30 créditos IA / mes
+                  </li>
                 </ul>
 
-                <Link to="/empezar?plan=pro" className="btn btn-price btn-price-yellow" style={{ marginTop: 'auto' }}>Elegir Pro</Link>
+                <Link to="/empezar?plan=pro" className="btn btn-price btn-yellow" style={{ marginTop: 'auto' }}>ELEGIR PRO</Link>
               </div>
 
-              {/* Plan Premium IA */}
-              <div className="price-card dark-theme">
-                <h3>Premium IA</h3>
-                <div className="price-slogan">Automatización máxima</div>
+              {/* Plan IA Plus */}
+              <div className="price-card">
+                <h3>IA PLUS</h3>
                 <div className="price-amount-wrapper">
                   <span className="price-amount">79€</span>
-                  <span className="price-period">/mes</span>
+                  <span className="price-period">/ MES</span>
                 </div>
-                <div className="launch-badge">Precio lanzamiento</div>
-                <div className="after-price">Después 119€/mes</div>
 
-                <div className="price-feature-plus">+ Todo lo de pro</div>
                 <ul className="price-features-list">
-                  <li className="price-feature-item">✓ Asistente IA Total</li>
-                  <li className="price-feature-item">✓ Búsqueda Conversacional</li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Todo lo Pro
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Lectura de gastos IA
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Soporte prioritario
+                  </li>
+                  <li className="price-feature-item">
+                    <span className="check-icon"></span>
+                    Acceso anticipado
+                  </li>
+                  <li className="price-feature-item ai-credits">
+                    <span className="sparkle-icon">✨</span>
+                    200 créditos IA / mes
+                  </li>
                 </ul>
 
-                <Link to="/empezar?plan=premium" className="btn btn-price btn-price-white" style={{ marginTop: 'auto' }}>Elegir Premium IA</Link>
+                <Link to="/empezar?plan=premium" className="btn btn-price btn-outline-dark" style={{ marginTop: 'auto' }}>ELEGIR IA PLUS</Link>
               </div>
             </div>
 
@@ -476,17 +504,17 @@ function HomePage() {
         {/* Final CTA Refined */}
         <section className="final-cta">
           <div className="container">
-            <h2 style={{ fontSize: '2.25rem' }}>Recupera el control de tu tiempo hoy.</h2>
+            <h2 style={{ fontSize: '2.25rem' }}>Ordena tu negocio en una sola vista</h2>
             <div className="hero-btns">
-              <Link to="/empezar" className="btn btn-secondary btn-lg">Empezar ahora</Link>
-              <a href="https://app.ciertto.com" className="btn btn-outline btn-lg" style={{ borderColor: 'var(--secondary)', background: 'transparent', color: 'var(--secondary)' }}>Acceder</a>
+              <Link to="#precios" className="btn btn-secondary btn-lg">Ver planes</Link>
+              <a href="https://app.ciertto.com" className="btn btn-outline btn-lg" style={{ borderColor: 'var(--secondary)', background: 'transparent', color: 'var(--secondary)' }}>Entrar en Ciertto</a>
             </div>
             <p style={{ fontSize: '0.8rem', marginTop: '2rem', opacity: 0.6 }}>Garantía de exportación total. Tus datos son tuyos.</p>
           </div>
         </section>
       </main>
 
-    </div>
+    </div >
   )
 }
 
@@ -506,6 +534,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <CookieConsent />
     </Router>
   )
 }

@@ -30,15 +30,14 @@ const PricingPage = () => {
             <main style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
                 <div className="container">
                     <div className="text-center" style={{ marginBottom: '6rem' }}>
-                        <h1 className="section-title" style={{ fontSize: '3.5rem' }}>Precios honestos</h1>
-                        <p className="section-desc">Transparencia total para que solo te preocupes de crecer.</p>
+                        <h1 className="section-title" style={{ fontSize: '3.5rem' }}>Elige según el nivel de control que quieres</h1>
+                        <p className="section-desc" style={{ marginTop: '1.5rem' }}>Empieza simple. Sube cuando el sistema ya te sostiene.</p>
                     </div>
 
                     <div className="pricing-grid">
-                        {/* Plan Base */}
                         <div className="price-card">
                             <h3>Base</h3>
-                            <div className="price-slogan">Orden y control operativo</div>
+                            <div className="price-slogan">Para poner orden y dejar de improvisar.</div>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">19€</span>
                                 <span className="price-period">/mes</span>
@@ -53,13 +52,15 @@ const PricingPage = () => {
                             </ul>
 
                             <Link to="/empezar?plan=base" className="btn btn-price btn-price-dark" style={{ marginTop: 'auto' }}>Elegir Base</Link>
+                            <div style={{ fontSize: '0.75rem', color: 'var(--secondary)', opacity: 0.5, marginTop: '0.75rem', textAlign: 'center' }}>
+                                5 créditos IA incluidos
+                            </div>
                         </div>
 
-                        {/* Plan Pro */}
                         <div className="price-card featured">
                             <div className="popular-badge">Más popular</div>
                             <h3>Pro</h3>
-                            <div className="price-slogan">Gestión integral + dinero</div>
+                            <div className="price-slogan">Para gestionar proyectos y seguimiento con más ritmo.</div>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">39€</span>
                                 <span className="price-period">/mes</span>
@@ -74,12 +75,14 @@ const PricingPage = () => {
                             </ul>
 
                             <Link to="/empezar?plan=pro" className="btn btn-price btn-price-yellow" style={{ marginTop: 'auto' }}>Elegir Pro</Link>
+                            <div style={{ fontSize: '0.75rem', color: 'var(--secondary)', opacity: 0.5, marginTop: '0.75rem', textAlign: 'center' }}>
+                                30 créditos IA incluidos
+                            </div>
                         </div>
 
-                        {/* Plan Premium IA */}
                         <div className="price-card dark-theme">
                             <h3>Premium IA</h3>
-                            <div className="price-slogan">Automatización máxima</div>
+                            <div className="price-slogan">Para revisar, resumir y decidir más rápido con asistencia.</div>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">79€</span>
                                 <span className="price-period">/mes</span>
@@ -94,6 +97,9 @@ const PricingPage = () => {
                             </ul>
 
                             <Link to="/empezar?plan=premium" className="btn btn-price btn-price-white" style={{ marginTop: 'auto' }}>Elegir Premium IA</Link>
+                            <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.75rem', textAlign: 'center' }}>
+                                200 créditos IA incluidos
+                            </div>
                         </div>
                     </div>
 

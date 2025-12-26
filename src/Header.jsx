@@ -117,11 +117,11 @@ const Header = () => {
                                             <p>Entra con datos de ejemplo y entiende Ciertto desde dentro. Luego lo adaptas a tu negocio.</p>
                                         </div>
                                     </a>
-                                    <a href="/#all" className="mega-menu-item">
-                                        <div className="mega-icon">➡️</div>
+                                    <a href="/#servicios" className="mega-menu-item">
+                                        <div className="mega-icon">📦</div>
                                         <div className="mega-content">
-                                            <h4>Ver todas las funcionalidades</h4>
-                                            <p>Explora todo lo que incluye Ciertto.</p>
+                                            <h4>Servicios <span className="mega-badge">Pro</span></h4>
+                                            <p>Define y gestiona tu catálogo de servicios y precios.</p>
                                         </div>
                                     </a>
                                 </div>
