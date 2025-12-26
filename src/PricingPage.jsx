@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
+import './pricing-new.css';
 
 const PricingPage = () => {
     const features = [
@@ -35,71 +36,107 @@ const PricingPage = () => {
                     </div>
 
                     <div className="pricing-grid">
+                        {/* Plan Base */}
                         <div className="price-card">
-                            <h3>Base</h3>
-                            <div className="price-slogan">Para poner orden y dejar de improvisar.</div>
+                            <h3>BASE</h3>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">19€</span>
-                                <span className="price-period">/mes</span>
+                                <span className="price-period">/ MES</span>
                             </div>
-                            <div className="launch-badge">Precio lanzamiento</div>
-                            <div className="after-price">Después 29€/mes</div>
 
                             <ul className="price-features-list">
-                                <li className="price-feature-item">✓ Dashboard & Foco</li>
-                                <li className="price-feature-item">✓ Calendario Google</li>
-                                <li className="price-feature-item">✓ Tareas & Cronómetro</li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Dashboard & Foco
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Calendario
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Tareas & Tiempos
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    CRM Ligero
+                                </li>
+                                <li className="price-feature-item ai-credits">
+                                    <span className="sparkle-icon">✨</span>
+                                    5 créditos IA / mes
+                                </li>
                             </ul>
 
-                            <Link to="/empezar?plan=base" className="btn btn-price btn-price-dark" style={{ marginTop: 'auto' }}>Elegir Base</Link>
-                            <div style={{ fontSize: '0.75rem', color: 'var(--secondary)', opacity: 0.5, marginTop: '0.75rem', textAlign: 'center' }}>
-                                5 créditos IA incluidos
-                            </div>
+                            <Link to="/empezar?plan=base" className="btn btn-price btn-outline-dark" style={{ marginTop: 'auto' }}>ELEGIR BASE</Link>
                         </div>
 
-                        <div className="price-card featured">
-                            <div className="popular-badge">Más popular</div>
-                            <h3>Pro</h3>
-                            <div className="price-slogan">Para gestionar proyectos y seguimiento con más ritmo.</div>
+                        {/* Plan Pro */}
+                        <div className="price-card featured-card">
+                            <div className="popular-badge">MÁS POPULAR</div>
+                            <h3>PRO</h3>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">39€</span>
-                                <span className="price-period">/mes</span>
+                                <span className="price-period">/ MES</span>
                             </div>
-                            <div className="launch-badge">Precio lanzamiento</div>
-                            <div className="after-price">Después 59€/mes</div>
 
-                            <div className="price-feature-plus">+ Todo lo de base</div>
                             <ul className="price-features-list">
-                                <li className="price-feature-item">✓ Facturación & Gastos</li>
-                                <li className="price-feature-item">✓ Métricas de Dinero</li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon gold"></span>
+                                    Todo lo Base
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon gold"></span>
+                                    Facturación ilimitada
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon gold"></span>
+                                    Gestión de gastos
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon gold"></span>
+                                    Exportación total
+                                </li>
+                                <li className="price-feature-item ai-credits">
+                                    <span className="sparkle-icon">✨</span>
+                                    30 créditos IA / mes
+                                </li>
                             </ul>
 
-                            <Link to="/empezar?plan=pro" className="btn btn-price btn-price-yellow" style={{ marginTop: 'auto' }}>Elegir Pro</Link>
-                            <div style={{ fontSize: '0.75rem', color: 'var(--secondary)', opacity: 0.5, marginTop: '0.75rem', textAlign: 'center' }}>
-                                30 créditos IA incluidos
-                            </div>
+                            <Link to="/empezar?plan=pro" className="btn btn-price btn-yellow" style={{ marginTop: 'auto' }}>ELEGIR PRO</Link>
                         </div>
 
-                        <div className="price-card dark-theme">
-                            <h3>Premium IA</h3>
-                            <div className="price-slogan">Para revisar, resumir y decidir más rápido con asistencia.</div>
+                        {/* Plan IA Plus */}
+                        <div className="price-card">
+                            <h3>IA PLUS</h3>
                             <div className="price-amount-wrapper">
                                 <span className="price-amount">79€</span>
-                                <span className="price-period">/mes</span>
+                                <span className="price-period">/ MES</span>
                             </div>
-                            <div className="launch-badge">Precio lanzamiento</div>
-                            <div className="after-price">Después 119€/mes</div>
 
-                            <div className="price-feature-plus">+ Todo lo de pro</div>
                             <ul className="price-features-list">
-                                <li className="price-feature-item">✓ Asistente IA Total</li>
-                                <li className="price-feature-item">✓ Búsqueda Conversacional</li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Todo lo Pro
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Lectura de gastos IA
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Soporte prioritario
+                                </li>
+                                <li className="price-feature-item">
+                                    <span className="check-icon"></span>
+                                    Acceso anticipado
+                                </li>
+                                <li className="price-feature-item ai-credits">
+                                    <span className="sparkle-icon">✨</span>
+                                    200 créditos IA / mes
+                                </li>
                             </ul>
 
-                            <Link to="/empezar?plan=premium" className="btn btn-price btn-price-white" style={{ marginTop: 'auto' }}>Elegir Premium IA</Link>
-                            <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.75rem', textAlign: 'center' }}>
-                                200 créditos IA incluidos
-                            </div>
+                            <Link to="/empezar?plan=premium" className="btn btn-price btn-outline-dark" style={{ marginTop: 'auto' }}>ELEGIR IA PLUS</Link>
                         </div>
                     </div>
 
@@ -132,10 +169,10 @@ const PricingPage = () => {
                             </table>
                         </div>
                     </div>
-                </div>
-            </main>
+                </div >
+            </main >
 
-        </div>
+        </div >
     );
 };
 
