@@ -16,6 +16,8 @@ const Footer = () => {
                         <span style={{ opacity: 0.3 }}>·</span>
                         <Link to="/cookies" style={{ fontSize: '0.85rem', color: 'var(--secondary)', opacity: 0.6, textDecoration: 'none' }}>Cookies</Link>
                         <span style={{ opacity: 0.3 }}>·</span>
+                        <Link to="/preguntas-frecuentes" style={{ fontSize: '0.85rem', color: 'var(--secondary)', opacity: 0.6, textDecoration: 'none' }}>Preguntas Frecuentes</Link>
+                        <span style={{ opacity: 0.3 }}>·</span>
                         <a
                             href="#"
                             onClick={(e) => {

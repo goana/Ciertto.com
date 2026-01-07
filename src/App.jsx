@@ -8,6 +8,7 @@ import Footer from './Footer'
 import ContactPage from './ContactPage'
 import CookieConsent from './CookieConsent'
 import { AvisoLegal, PoliticaPrivacidad, PoliticaCookies } from './LegalPages'
+import FAQPage from './FAQPage'
 import './pricing-new.css'
 import ScrollToTop from './ScrollToTop'
 
@@ -532,6 +533,7 @@ function App() {
           <Route path="/aviso-legal" element={<AvisoLegal />} />
           <Route path="/privacidad" element={<PoliticaPrivacidad />} />
           <Route path="/cookies" element={<PoliticaCookies />} />
+          <Route path="/preguntas-frecuentes" element={<FAQPage />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </div>

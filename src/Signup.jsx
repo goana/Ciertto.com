@@ -32,7 +32,8 @@ const Signup = () => {
         };
 
         try {
-            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+            // Fallback directo a producción si no hay ENV (evita error de localhost en deploy)
+            const apiUrl = import.meta.env.VITE_API_URL || 'https://us-central1-ciertto-os.cloudfunctions.net';
             const response = await fetch(`${apiUrl}/api/signup`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
