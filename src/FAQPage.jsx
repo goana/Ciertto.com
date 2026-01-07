@@ -14,6 +14,7 @@ const FAQPage = () => {
                         <h1 className="section-title">Preguntas Frecuentes</h1>
                         <p className="section-desc" style={{ marginBottom: '0' }}>Resuelve tus dudas sobre seguridad, datos y funcionamiento de Ciertto.</p>
                     </div>
+                    ...
 
                     <div className="faq-item" style={{ marginBottom: '3rem' }}>
                         <h2 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--secondary)' }}>

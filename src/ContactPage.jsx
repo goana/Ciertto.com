@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from './Header';
 
 const ContactPage = () => {
     const [status, setStatus] = useState({ type: '', message: '' });
@@ -46,7 +45,6 @@ const ContactPage = () => {
 
     return (
         <div className="contact-page">
-            <Header />
             <main className="contact-main">
                 <div className="container">
                     <div className="contact-grid">

@@ -31,7 +31,6 @@ const Header = () => {
                 </Link>
 
                 <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-                    <Link to="/preguntas-frecuentes" className="nav-link" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
                     <a href="/#producto" className="nav-link" onClick={() => setIsMenuOpen(false)}>Producto</a>
 
                     <div className="nav-item-has-menu desktop-only">
@@ -135,6 +134,7 @@ const Header = () => {
 
                     <a href="/#precios" className="nav-link mobile-only" onClick={() => setIsMenuOpen(false)}>Funcionalidades</a>
                     <Link to="/precios" className="nav-link" onClick={() => setIsMenuOpen(false)}>Precios</Link>
+                    <Link to="/preguntas-frecuentes" className="nav-link" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
 
                     <div className="mobile-only" style={{ marginTop: "2rem", flexDirection: "column", gap: "0.75rem", width: "100%" }}>
                         <Link to="/empezar" className="btn btn-primary" onClick={() => setIsMenuOpen(false)}>Pruébalo gratis</Link>

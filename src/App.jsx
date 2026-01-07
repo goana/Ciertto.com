@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from 'react-router-dom'
 import Signup from './Signup'
 import PricingPage from './PricingPage'
 import Header from './Header'
@@ -21,8 +21,6 @@ function HomePage() {
 
   return (
     <div className="app">
-      <Header />
-
       <main>
         {/* Hero Section */}
         <section className="hero">
@@ -520,21 +518,30 @@ function HomePage() {
   )
 }
 
+const MainLayout = () => (
+  <>
+    <Header />
+    <Outlet />
+  </>
+);
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <div className="main-layout">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/precios" element={<PricingPage />} />
+            <Route path="/aviso-legal" element={<AvisoLegal />} />
+            <Route path="/privacidad" element={<PoliticaPrivacidad />} />
+            <Route path="/cookies" element={<PoliticaCookies />} />
+            <Route path="/preguntas-frecuentes" element={<FAQPage />} />
+            <Route path="/contacto" element={<ContactPage />} />
+          </Route>
           <Route path="/empezar" element={<Signup />} />
-          <Route path="/precios" element={<PricingPage />} />
           <Route path="/success" element={<SuccessPage />} />
-          <Route path="/aviso-legal" element={<AvisoLegal />} />
-          <Route path="/privacidad" element={<PoliticaPrivacidad />} />
-          <Route path="/cookies" element={<PoliticaCookies />} />
-          <Route path="/preguntas-frecuentes" element={<FAQPage />} />
-          <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </div>
       <Footer />

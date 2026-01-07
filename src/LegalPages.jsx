@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Header from './Header';
 
 const LegalPage = ({ title, content }) => {
     useEffect(() => {
@@ -8,7 +7,6 @@ const LegalPage = ({ title, content }) => {
 
     return (
         <div className="legal-page">
-            <Header />
             <main style={{ paddingTop: '8rem', paddingBottom: '8rem', minHeight: '80vh' }}>
                 <div className="container" style={{ maxWidth: '800px' }}>
                     <h1 className="section-title" style={{ marginBottom: '3rem' }}>{title}</h1>

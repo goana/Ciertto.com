@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
 import './pricing-new.css';
 
 const PricingPage = () => {
@@ -26,7 +25,6 @@ const PricingPage = () => {
 
     return (
         <div className="pricing-page">
-            <Header />
 
             <main style={{ paddingTop: '8rem', paddingBottom: '8rem' }}>
                 <div className="container">
