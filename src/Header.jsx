@@ -31,6 +31,7 @@ const Header = () => {
                 </Link>
 
                 <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
+                    <Link to="/preguntas-frecuentes" className="nav-link" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
                     <a href="/#producto" className="nav-link" onClick={() => setIsMenuOpen(false)}>Producto</a>
 
                     <div className="nav-item-has-menu desktop-only">
