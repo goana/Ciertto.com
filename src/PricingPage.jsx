@@ -38,9 +38,10 @@ const PricingPage = () => {
                         <div className="price-card">
                             <h3>BASE</h3>
                             <div className="price-amount-wrapper">
-                                <span className="price-amount">19€</span>
+                                <span className="price-amount">9,99€</span>
                                 <span className="price-period">/ MES</span>
                             </div>
+                            <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>después 19,99€</div>
 
                             <ul className="price-features-list">
                                 <li className="price-feature-item">
@@ -73,9 +74,10 @@ const PricingPage = () => {
                             <div className="popular-badge">MÁS POPULAR</div>
                             <h3>PRO</h3>
                             <div className="price-amount-wrapper">
-                                <span className="price-amount">39€</span>
+                                <span className="price-amount">29,99€</span>
                                 <span className="price-period">/ MES</span>
                             </div>
+                            <div style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.6)', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>después 39,99€</div>
 
                             <ul className="price-features-list">
                                 <li className="price-feature-item">
@@ -107,9 +109,10 @@ const PricingPage = () => {
                         <div className="price-card">
                             <h3>IA PLUS</h3>
                             <div className="price-amount-wrapper">
-                                <span className="price-amount">79€</span>
+                                <span className="price-amount">59,99€</span>
                                 <span className="price-period">/ MES</span>
                             </div>
+                            <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '-0.5rem', marginBottom: '1.5rem' }}>después 79,99€</div>
 
                             <ul className="price-features-list">
                                 <li className="price-feature-item">
